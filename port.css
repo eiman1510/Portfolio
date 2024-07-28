@@ -1,0 +1,490 @@
+
+@font-face {
+    font-family: 'Britany';
+    src: url('fonts/BrittanySignature.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('fonts/CinzelDecorative-Regular.ttf') format('truetype');
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+body {
+    background: linear-gradient(to right, rgb(223, 118, 223), grey, rgb(133, 133, 205));
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.navbar {
+    backdrop-filter: blur(30px);
+    color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-item {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 25px;
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+}
+
+.nav-item:hover {
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.selected {
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    color: black;
+}
+
+.navbar-brand {
+    font-family: 'Britany', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.cont {
+    width: 100%;
+    height: max-content;
+    border: 2px solid transparent;
+    color: black;
+    margin-bottom: 2%;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+    padding-top: 5%;
+}
+
+.min-text {
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.big-text {
+    font-size: 50px;
+    font-family: 'Britany', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.typing-container {
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+
+.cv-btn {
+    color: black;
+    border: 1.5px solid black;
+    padding: 1% 4% 1% 4%;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    border-radius: 15px;
+}
+
+.cv-btn:hover {
+    color: black;
+    font-weight: bolder;
+}
+
+.head {
+    justify-content: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 45px;
+    position: relative;
+}
+
+.min-text1 {
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    position: relative;
+}
+
+.big-text1 {
+    font-size: 50px;
+    font-family: 'Britany', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 20%;
+}
+
+.big-text3 {
+    font-size: 40px;
+    font-family: 'Britany', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.pro-name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.pro-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 10px;
+    margin-top: 5%;
+}
+
+.pro-cont-div1 {
+    width: 90%;
+    margin: 2% 1% 1% 5%;
+    height: 400px;
+}
+
+.card1 {
+    width: 90%;
+    height: 30px;
+    margin: 1% 1% 1% 5%;
+    text-align: center;
+}
+
+.card2 {
+    width: 90%;
+    height: 120px;
+    margin: 1% 1% 1% 5%;
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    height: 200px;
+    flex-direction: column;
+    position: relative;
+    background: linear-gradient(to right, rgb(223, 118, 223), grey, rgb(133, 133, 205));
+}
+
+a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.head1 {
+    justify-content: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 35px;
+    position: relative;
+}
+
+.contact-div {
+    justify-content: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    position: relative;
+}
+
+.program-div {
+    width: 90%;
+    margin-left: 5%;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    position: relative;
+    perspective: 1000px;
+    padding-top: 5%;
+
+}
+
+.program-card {
+    width: 20%;
+    height: 90px;
+    margin: 1%;
+    transform-style: preserve-3d;
+    transition: transform 1s, z-index 0.6s;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, rgb(223, 118, 223), grey, rgb(133, 133, 205));
+}
+
+.program-card:nth-child(1){
+    transform: rotateY(75deg) translateX(4%) scale(1.55);
+}
+.program-card:nth-child(2){
+    transform: rotateY(70deg) translateX(4%) scale(1.35);
+}
+.program-card:nth-child(3){
+    transform: rotateY(65deg) translateX(5%) scale(1.15);
+}
+.program-card:nth-child(4){
+    transform: rotateY(0deg) translateX(0%) scale(1.55);
+}
+.program-card:nth-child(5){
+    transform: rotateY(-65deg) translateX(5%) scale(1.15);
+}
+.program-card:nth-child(6){
+    transform: rotateY(-70deg) translateX(5%) scale(1.35);
+}
+.program-card:nth-child(7){
+    transform: rotateY(-75deg) translateX(5%) scale(1.55);
+}
+
+.program-card.selected{
+    transform: rotateY(0deg) translateX(0%) scale(1.75);
+    z-index: 100;
+}
+.big-text4 {
+    font-size: 20px;
+    font-family: 'Britany', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+.program-name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-top: 20%;
+}
+.skill-div{
+    width: 90%;
+    margin-left: 5%;
+    height: 300px;
+    /* border: 2px solid black; */
+}
+.skill-card-gallery {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+    margin-left: 45%;
+    margin-top: 10%;
+}
+
+.skill-card {
+    /* position: relative; */
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transition: transform 1s, z-index 0.6s;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, rgb(223, 118, 223), grey, rgb(133, 133, 205));
+    border:2px solid black;
+}
+
+
+.skill-card:nth-child(1) {
+    transform: rotateY(0deg) translateZ(150px);
+}
+
+.skill-card:nth-child(2) {
+    transform: rotateY(70deg) translateZ(150px);
+}
+
+.skill-card:nth-child(3) {
+    transform: rotateY(140deg) translateZ(150px);
+}
+
+.skill-card:nth-child(4) {
+    transform: rotateY(210deg) translateZ(150px);
+}
+
+.skill-card:nth-child(5) {
+    transform: rotateY(275deg) translateZ(150px);
+}
+
+.skill-card.selected {
+    transform: scale(1.5) translateZ(150px) !important;
+    z-index: 100;
+}
+.skill-name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 25%;
+}
+
+.offcanvas{
+    background-color: black;
+}
+.offcanvas-title{
+    font-family: 'Britany',sans-serif;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    color:rgb(133, 133, 205);
+}
+.canvas-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    color:rgb(223, 118, 223);
+}
+.canvas-tech{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    color:rgb(133, 133, 205);;
+}
+img{
+    height: 200px;
+    margin-left: 20%;
+}
+/* ----------------------------------------------------------------------------------------- */
+
+@media (max-width: 990px) {
+    body {
+        background-size: 100%;
+        overflow-x: hidden;
+    }
+
+    .cont {
+        overflow-x: hidden;
+        margin-bottom: 10%;
+        padding-top: 15%;
+    }
+
+    .navbar-nav {
+        flex-direction: row !important;
+        justify-content: center;
+    }
+
+    .nav-item {
+        flex: 1;
+    }
+
+    #main {
+        padding-top: 10%;
+    }
+
+    .typing-container {
+        margin-top: 30%;
+    }
+
+    #about,
+    .col-3 {
+        width: 100%;
+    }
+
+    #about .col-8 {
+        width: 80%;
+        margin: 3% 5% 5% 3%;
+    }
+
+    #about .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .min-text1 {
+        font-size: 15px;
+    }
+
+    .big-text1,
+    .big-text3 {
+        font-size: 30px;
+    }
+
+    .head {
+        font-size: 30px;
+    }
+
+    #project {
+        width: 100%;
+        height: 1300px;
+    }
+
+    .card {
+        flex-direction: row !important;
+    }
+
+    .pro-text {
+        font-size: 13px;
+    }
+    .program-card{
+        width: 15%;
+        height: 70px;
+    }
+    .big-text4{
+        font-size: 13px;
+        margin-top: 20%;
+    }
+    .program-name{
+        font-size: 7px;
+        margin-top: 45%;
+    }
+    .program-div{
+        height: 150px;
+    }
+    #programs{
+        height: fit-content;
+    }
+    .skill-card:nth-child(1) {
+    transform: rotateY(0deg) translateZ(150px);
+}
+
+.skill-card:nth-child(2) {
+    transform: rotateY(72deg) translateZ(150px);
+}
+
+.skill-card:nth-child(3) {
+    transform: rotateY(144deg) translateZ(150px);
+}
+
+.skill-card:nth-child(4) {
+    transform: rotateY(216deg) translateZ(150px);
+}
+
+.skill-card:nth-child(5) {
+    transform: rotateY(288deg) translateZ(150px);
+}
+
+.skill-card.selected {
+    transform: scale(1.5) translateZ(150px) !important;
+    z-index: 100;
+}
+.skill-card-gallery{
+    margin-top:15%;
+    justify-items: center;
+    justify-content: center;
+    
+
+}
+    
+}
